@@ -2,7 +2,7 @@
 
 33 country flag patches for [REAPER_CORE](https://reforger.armaplatform.com/workshop/5EB139459EBF5C16) in Arma Reforger. The patches use its rectangular patch system and appear in its arsenal. Eastern European, Baltic, and Balkan flags are listed first, followed by additional EU flags.
 
-![PT Reaper Addons showcase artwork](docs/images/showcase.jpg)
+![PT Reaper Addons preview image](docs/images/preview_image.jpg)
 
 [Get PT Reaper Addons on the Arma Reforger Workshop](https://reforger.armaplatform.com/workshop/4CA7EDED31724660-PTReaperAddons)
 
