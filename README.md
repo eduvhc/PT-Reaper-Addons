@@ -2,6 +2,10 @@
 
 33 country flag patches for [REAPER_CORE](https://reforger.armaplatform.com/workshop/5EB139459EBF5C16) in Arma Reforger. The patches use its rectangular patch system and appear in its arsenal. Eastern European, Baltic, and Balkan flags are listed first, followed by additional EU flags.
 
+![PT Reaper Addons showcase artwork](docs/images/showcase.jpg)
+
+[Get PT Reaper Addons on the Arma Reforger Workshop](https://reforger.armaplatform.com/workshop/4CA7EDED31724660-PTReaperAddons)
+
 ## How it works
 
 1. Each country starts as an SVG in [`Assets/Flags`](Assets/Flags). [`build-country-patches.cjs`](Tools/build-country-patches.cjs) places it on a stitched patch texture; `sharp` prepares the image and `texconv` encodes the game texture (`.edds`).
