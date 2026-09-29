@@ -1,5 +1,5 @@
 // Build-time only. Input SVGs are vendored from flag-icons under MIT (see LICENSES).
-// Set NODE_PATH to a Node installation containing sharp; pass texconv.exe as argv[2].
+// Run npm ci first, then pass texconv.exe as argv[2].
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -56,10 +56,8 @@ async function build() {
   const arsenal = [];
   for (const [code, name] of Object.entries(countries)) {
     const stem = `PT_rectangle_patch_${code}`;
-    const customPng = path.join(root, 'Assets', 'Flags', `${code.toLowerCase()}.png`);
     const sourceSvg = path.join(root, 'Assets', 'Flags', `${code.toLowerCase()}.svg`);
-    const src = fs.existsSync(customPng) ? customPng : sourceSvg;
-    if (!fs.existsSync(src)) throw new Error(`Missing flag artwork: ${src}`);
+    if (!fs.existsSync(sourceSvg)) throw new Error(`Missing flag artwork: ${sourceSvg}`);
     const textureResource = `Assets/Patches/Data/${stem}_BCR.edds`;
     const materialResource = `Assets/Patches/Data/${stem}.emat`;
     const prefabResource = `Prefabs/Patches/${stem}.et`;
@@ -77,7 +75,7 @@ async function build() {
     // rotated. The remaining UV islands form the dark reverse/edge fabric.
     const pngPath = path.join(dataDir, `${stem}_BCR.png`);
     const makeFace = async (width) => {
-      const flag = await sharp(src).resize(PATCH_TEXTURE.size, PATCH_TEXTURE.size, { fit: 'fill' }).rotate(90)
+      const flag = await sharp(sourceSvg).resize(PATCH_TEXTURE.size, PATCH_TEXTURE.size, { fit: 'fill' }).rotate(90)
         .resize(width - PATCH_TEXTURE.innerInsetX * 2, PATCH_TEXTURE.size - PATCH_TEXTURE.innerInsetY * 2, { fit: 'fill' })
         .modulate({ brightness: PATCH_TEXTURE.flagBrightness, saturation: PATCH_TEXTURE.flagSaturation })
         .ensureAlpha().png().toBuffer();
