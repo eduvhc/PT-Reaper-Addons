@@ -6,6 +6,10 @@
 
 [Get PT Reaper Addons on the Arma Reforger Workshop](https://reforger.armaplatform.com/workshop/4CA7EDED31724660-PTReaperAddons)
 
+## Screenshot
+
+<img src="docs/images/screenshots/patch_arsenal.png" alt="Country patches in the REAPER_CORE arsenal" width="280" />
+
 ## How it works
 
 1. Each country starts as an SVG in [`Assets/Flags`](Assets/Flags). [`build-country-patches.cjs`](Tools/build-country-patches.cjs) places it on a stitched patch texture; `sharp` prepares the image and `texconv` encodes the game texture (`.edds`).
