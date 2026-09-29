@@ -2,6 +2,13 @@
 
 33 country flag patches for [REAPER_CORE](https://reforger.armaplatform.com/workshop/5EB139459EBF5C16) in Arma Reforger. The patches use its rectangular patch system and appear in its arsenal. Eastern European, Baltic, and Balkan flags are listed first, followed by additional EU flags.
 
+## How it works
+
+1. Each country starts as an SVG in [`Assets/Flags`](Assets/Flags). [`build-country-patches.cjs`](Tools/build-country-patches.cjs) places it on a stitched patch texture; `sharp` prepares the image and `texconv` encodes the game texture (`.edds`).
+2. The generated material (`.emat`) points to that texture. Each prefab (`.et`) inherits REAPER_CORE's rectangular patch and overrides its material for both the inventory item and the worn patch. The mesh and shared maps remain in REAPER_CORE.
+3. [`PT_ReaperPatchArsenal.c`](Scripts/Game/PT_ReaperPatchArsenal.c) extends the existing arsenal method. It calls `super`, then adds our prefabs only when REAPER_CORE is loading its patch catalog; other catalogs are untouched.
+4. The `.meta` files give resources stable IDs. Keep them when regenerating assets so prefab and material references do not break.
+
 ## Build
 
 Install Node.js 20.9+ and Microsoft's `texconv.exe`, then run:
@@ -12,7 +19,7 @@ npm run build -- "C:\path\to\texconv.exe"
 npm run verify
 ```
 
-The built resources and their `.meta` files are included in this repository. Keep the `.meta` files when rebuilding so resource IDs remain stable.
+Generated resources are committed, so you only need the build tools when changing flags. `npm run verify` checks resource references and catalog entries; use Workbench to compile scripts and inspect the patch, then test equipping in-game.
 
 ## Credits and license
 
