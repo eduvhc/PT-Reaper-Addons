@@ -1,0 +1,7 @@
+/resourceDatabase.rdb
+/data*.pak
+/*_manifest.json
+/node_modules/
+/.EditorData/
+/.Data/
+/temp/

@@ -1,0 +1,21 @@
+GameProject {
+ ID "PTReaperAddons"
+ GUID "4CA7EDED31724660"
+ TITLE "PT Reaper Addons"
+ Dependencies {
+  "58D0FB3206B6F859" "5EB139459EBF5C16"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig HEADLESS {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+   PlatformHardware PS5
+  }
+ }
+}

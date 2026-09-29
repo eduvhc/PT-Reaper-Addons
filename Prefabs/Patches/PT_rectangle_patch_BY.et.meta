@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DB20D900EB9A12A6}Prefabs/Patches/PT_rectangle_patch_BY.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,28 @@
+GameEntity : "{8FDAA4F88FBD3F2E}Prefabs/Patches/REAPER_rectangle_patch_DE.et" {
+ ID "733E6C0F98EDC752"
+ components {
+  InventoryItemComponent "{68F0F84A79762D37}" {
+   Attributes SCR_ItemAttributeCollection "{68F0F84A46BFD980}" {
+    ItemDisplayName UIInfo "{68F0F84A43DB9D79}" {
+     Name "Patch Serbia"
+     Description "eduvhc rectangle Patch"
+    }
+   }
+  }
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{69F283A4BCA0A987}" {
+     AssignedMaterial "{3BCE862AE54A088A}Assets/Patches/Data/PT_rectangle_patch_RS.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{3BCE862AE54A088A}Assets/Patches/Data/PT_rectangle_patch_RS.emat"
+   }
+   ItemMaterialsOverride {
+    "{3BCE862AE54A088A}Assets/Patches/Data/PT_rectangle_patch_RS.emat"
+   }
+  }
+ }
+}

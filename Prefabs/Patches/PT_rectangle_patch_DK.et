@@ -1,0 +1,28 @@
+GameEntity : "{8FDAA4F88FBD3F2E}Prefabs/Patches/REAPER_rectangle_patch_DE.et" {
+ ID "946DECE043814A37"
+ components {
+  InventoryItemComponent "{68F0F84A79762D37}" {
+   Attributes SCR_ItemAttributeCollection "{68F0F84A46BFD980}" {
+    ItemDisplayName UIInfo "{68F0F84A43DB9D79}" {
+     Name "Patch Denmark"
+     Description "eduvhc rectangle Patch"
+    }
+   }
+  }
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{69F283A4BCA0A987}" {
+     AssignedMaterial "{D02BCD79159A8D45}Assets/Patches/Data/PT_rectangle_patch_DK.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{D02BCD79159A8D45}Assets/Patches/Data/PT_rectangle_patch_DK.emat"
+   }
+   ItemMaterialsOverride {
+    "{D02BCD79159A8D45}Assets/Patches/Data/PT_rectangle_patch_DK.emat"
+   }
+  }
+ }
+}

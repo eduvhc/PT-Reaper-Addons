@@ -1,0 +1,28 @@
+GameEntity : "{8FDAA4F88FBD3F2E}Prefabs/Patches/REAPER_rectangle_patch_DE.et" {
+ ID "69667BB6DB7E42D7"
+ components {
+  InventoryItemComponent "{68F0F84A79762D37}" {
+   Attributes SCR_ItemAttributeCollection "{68F0F84A46BFD980}" {
+    ItemDisplayName UIInfo "{68F0F84A43DB9D79}" {
+     Name "Patch Italy"
+     Description "eduvhc rectangle Patch"
+    }
+   }
+  }
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{69F283A4BCA0A987}" {
+     AssignedMaterial "{9FD0CEFC74603E78}Assets/Patches/Data/PT_rectangle_patch_IT.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{9FD0CEFC74603E78}Assets/Patches/Data/PT_rectangle_patch_IT.emat"
+   }
+   ItemMaterialsOverride {
+    "{9FD0CEFC74603E78}Assets/Patches/Data/PT_rectangle_patch_IT.emat"
+   }
+  }
+ }
+}

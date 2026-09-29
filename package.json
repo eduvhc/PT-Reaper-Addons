@@ -1,0 +1,16 @@
+{
+  "name": "pt-reaper-addons-tools",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Build and verify PT Reaper Addons resources",
+  "scripts": {
+    "build": "node Tools/build-country-patches.cjs",
+    "verify": "node Tools/verify-project.cjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

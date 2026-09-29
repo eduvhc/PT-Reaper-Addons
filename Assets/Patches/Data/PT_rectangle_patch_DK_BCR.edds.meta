@@ -1,0 +1,18 @@
+MetaFileClass {
+ Name "{EA33A8D53F509F0A}Assets/Patches/Data/PT_rectangle_patch_DK_BCR.edds"
+ Configurations {
+  PNGResourceClass PC {
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass PS5 : PC {
+  }
+  PNGResourceClass HEADLESS : PC {
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+ }
+}

@@ -1,0 +1,28 @@
+GameEntity : "{8FDAA4F88FBD3F2E}Prefabs/Patches/REAPER_rectangle_patch_DE.et" {
+ ID "4AD7FCF54BD46033"
+ components {
+  InventoryItemComponent "{68F0F84A79762D37}" {
+   Attributes SCR_ItemAttributeCollection "{68F0F84A46BFD980}" {
+    ItemDisplayName UIInfo "{68F0F84A43DB9D79}" {
+     Name "Patch Malta"
+     Description "eduvhc rectangle Patch"
+    }
+   }
+  }
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{69F283A4BCA0A987}" {
+     AssignedMaterial "{B91AA152CF2BCD1C}Assets/Patches/Data/PT_rectangle_patch_MT.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{B91AA152CF2BCD1C}Assets/Patches/Data/PT_rectangle_patch_MT.emat"
+   }
+   ItemMaterialsOverride {
+    "{B91AA152CF2BCD1C}Assets/Patches/Data/PT_rectangle_patch_MT.emat"
+   }
+  }
+ }
+}

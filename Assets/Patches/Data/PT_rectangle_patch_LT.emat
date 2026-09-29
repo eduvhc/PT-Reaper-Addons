@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{FFEF8860F2A260CD}Assets/Patches/Data/PT_rectangle_patch_LT_BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{55EBE9BC4A721891}Assets/Patches/Data/reaper_patch_rectangle_base_NMO.edds"
+}

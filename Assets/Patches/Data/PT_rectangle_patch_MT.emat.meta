@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{B91AA152CF2BCD1C}Assets/Patches/Data/PT_rectangle_patch_MT.emat"
+ Configurations {
+  MaterialResourceClass PC {
+  }
+  MaterialResourceClass XBOX_SERIES : PC {
+  }
+  MaterialResourceClass PS4 : PC {
+  }
+  MaterialResourceClass PS5 : PC {
+  }
+  MaterialResourceClass HEADLESS : PC {
+  }
+ }
+}
